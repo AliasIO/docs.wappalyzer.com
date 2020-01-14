@@ -54,7 +54,7 @@ In case of an error, an error type may be included in the JSON response, along w
 | `NO_HTML_DOCUMENT` | The server response did not include a HTML document |
 
 
-## Limits &amp; usage
+## Limits & usage
 
 Every request includes response headers detailing the API limits and your usage.
 

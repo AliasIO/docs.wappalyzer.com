@@ -15,7 +15,7 @@ Wappalyzer uses API keys to provide authorized access to its APIs. [Subscribe](h
 
 | Request header | Value              |
 |:-------------- |:------------------ |
-| `X-Api-Key`    | *`<Your API key>`* |
+| `x-api-key`    | *`<Your API key>`* |
 
 
 ## Demo API key
@@ -54,39 +54,18 @@ In case of an error, an error type may be included in the JSON response, along w
 | `NO_HTML_DOCUMENT` | The server response did not include a HTML document |
 
 
-## Usage
+## Limits &amp; usage
 
-To determine the remaining quota and limits associated with your plan, query the relevant resource URL with `/usage` appended. 
+Every request includes response headers detailing the API limits and your usage.
 
 ::: tip NOTE
-* This request will be counted towards your subscription quota
 * The remaining quota value is updated periodically and should be treated as an estimate
 :::
 
-**Example request**
+| Header                       | Description                                                              |
+|:---------------------------- |:------------------------------------------------------------------------ |
+| `wappalyzer-rate-limit`      | The maximum number of request that can be made per second                |
+| `wappalyzer-quota-limit`     | The total number of requests that can be made within the time period     |
+| `wappalyzer-quota-period`    | The period of time after which the quota is reset (e.g. `MONTH`)         |
+| `wappalyzer-quota-remaining` | The remaining number of requests that can be made within the time period |
 
-``` sh
-curl -H "X-Api-Key: wappalyzer.api.demo.key" https://api.wappalyzer.com/lookup/v1/usage
-```
-
-**Example response**
-
-``` json
-{
-  "api": {
-    "throttle": {
-      "rateLimit": 10
-    },
-    "quota": {
-      "limit": 100000,
-      "period": "MONTH"
-    }
-  },
-  "plan": {
-    "name": "api_lookup_medium",
-    "quota": {
-      "remaining": 97520
-    }
-  }
-}
-```

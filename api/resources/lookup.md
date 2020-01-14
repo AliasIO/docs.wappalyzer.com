@@ -33,8 +33,8 @@ If Wappalyzer hasn't seen the domain before, it will be indexed automatically. R
 **Example request**
 
 ``` sh
-curl -H "X-Api-Key: wappalyzer.api.demo.key" \
-https://api.wappalyzer.com/lookup/v1/?url=https://example.com&callback_url=https://example.com
+curl -H "x-api-key: wappalyzer.api.demo.key" \
+"https://api.wappalyzer.com/lookup/v1/?url=https://example.com&callback_url=https://example.com"
 
 ```
 **Example response (`200`)**

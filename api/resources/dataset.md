@@ -36,9 +36,9 @@ Transactional emails including order confirmations, receipts and invoices, will 
 **Example request**
 
 ``` sh
-curl -H "X-Api-Key: your.api.key" \
+curl -H "x-api-key: your.api.key" \
 -d '{ "technologies": ["Craft CMS"], "callbackUrl": "https://example.com" }' \
-https://api.wappalyzer.com/dataset/v1/
+"https://api.wappalyzer.com/dataset/v1/"
 ```
 
 **Example response (`202`)**

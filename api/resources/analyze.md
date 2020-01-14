@@ -13,7 +13,7 @@ Fetch and analyse a single web page in real-time.
 | Property        | Description                                                                                                                      |
 |:----------------|:--------------------------------------------------------------------------------------------|
 | Execution       | Synchronous                                                                                 | 
-| Request timeout | 15s                                                                                         | 
+| Request timeout | 30s                                                                                         | 
 | Rate limit      | 1 request / second on the Small plan<br>10 requests / second on the Medium and Large plans  |
 
 
@@ -28,8 +28,8 @@ Fetch and analyse a single web page in real-time.
 **Example request**
 
 ``` sh
-curl -H "X-Api-Key: wappalyzer.api.demo.key" \
-https://api.wappalyzer.com/analyze/v1/?url=https://example.com
+curl -H "x-api-key: wappalyzer.api.demo.key" \
+"https://api.wappalyzer.com/analyze/v1/?url=https://example.com"
 ```
 
 **Example response (success)**

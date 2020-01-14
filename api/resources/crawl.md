@@ -15,7 +15,7 @@ This API is asynchronous: results are sent to a callback URL after the domain ha
 | Property        | Description                                                                                |
 |:----------------|:-------------------------------------------------------------------------------------------|
 | Execution       | Asynchronous                                                                               | 
-| Request timeout | 5s                                                                                         |  
+| Request timeout | 6s                                                                                         |  
 | Rate limit      | 1 request / second on the Small plan<br>10 requests / second on the Medium and Large plans |
 
 
@@ -32,8 +32,8 @@ This API is asynchronous: results are sent to a callback URL after the domain ha
 **Example request**
 
 ``` sh
-curl -H "X-Api-Key: wappalyzer.api.demo.key" \
-https://api.wappalyzer.com/crawl/v1/?url=https://example.com&callback_url=https://example.com
+curl -H "x-api-key: wappalyzer.api.demo.key" \
+"https://api.wappalyzer.com/crawl/v1/?url=https://example.com&callback_url=https://example.com"
 ```
 
 **Example response (`202`)**

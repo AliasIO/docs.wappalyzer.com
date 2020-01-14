@@ -43,7 +43,7 @@ Find the JSON schema at schema.json.
 
 | Field     | Type   | Description                                                                                                | Example                 |
 |:--------- |:------ |:---------------------------------------------------------------------------------------------------------- |:----------------------- |
-| `cats`    | Array  | One or more category IDs. Refer to the [list of category IDs](https://www.wappalyzer.com/docs/categories). | `[1, 6]`                |
+| `cats`    | Array  | One or more category IDs. Refer to the [list of category IDs](https://www.wappalyzer.com/categories/list). | `[1, 6]`                |
 | `icon`    | String | Application icon filename.                                                                                 | `"WordPress.svg"`       |
 | `website` | String | URL of the application's website.                                                                          | `"https://example.com"` |
 

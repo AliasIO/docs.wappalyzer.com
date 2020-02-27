@@ -12,11 +12,11 @@ This API is asynchronous: results are sent to a callback URL after the domain ha
 
 ## Properties
 
-| Property        | Description                                                                                |
-|:----------------|:-------------------------------------------------------------------------------------------|
-| Execution       | Asynchronous                                                                               | 
-| Request timeout | 6s                                                                                         |  
-| Rate limit      | 1 request / second on the Small plan<br>10 requests / second on the Medium and Large plans |
+| Property        | Description        |
+|:----------------|:-------------------|
+| Execution       | Asynchronous       | 
+| Request timeout | 6s                 |  
+| Rate limit      | 1 request / second |
 
 
 ## Parameters

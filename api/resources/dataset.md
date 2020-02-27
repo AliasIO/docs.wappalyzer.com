@@ -12,11 +12,11 @@ Transactional emails including order confirmations, receipts and invoices, will 
 
 ## Properties
 
-| Property        | Description                                                                                                                      |
-|:----------------|:-------------------------------------------------------- |
-| Execution       | Asynchronous                                             |
-| Request timeout | 20s                                                      |
-| Rate limit      | 1 request / 10 seconds (burstable to 1 request / second) | 
+| Property        | Description        |
+|:----------------|:-------------------|
+| Execution       | Asynchronous       |
+| Request timeout | 20s                |
+| Rate limit      | 1 request / second | 
 
 
 ## Request body (JSON)

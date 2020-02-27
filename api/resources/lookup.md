@@ -12,11 +12,11 @@ If Wappalyzer hasn't seen the domain before, it will be indexed automatically. R
 
 ## Properties
 
-| Property                 | Description 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	       |
-|:-------------------------|:--------------------------------------------------------------------------------------------|
-| Execution                | Synchronous / Asynchronous (when call yields no results)                                    |
-| Request timeout          | 30s                                                                                         | 
-| Rate limit               | 1 request / second on the Small plan<br> 10 requests / second on the Medium and Large plans |
+| Property                 | Description 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	|
+|:-------------------------|:---------------------------------------------------------|
+| Execution                | Synchronous / Asynchronous (when call yields no results) |
+| Request timeout          | 30s                                                      | 
+| Rate limit               | 1 request / second                                       |
 
 
 ## Parameters
